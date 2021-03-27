@@ -35,7 +35,7 @@ function FreehandDrawingTool() {
   this._isBackgroundOnly = true; // affects canStart()
 
   // this is the Shape that is shown during a drawing operation
-  this._temporaryShape = go.GraphObject.make(go.Shape, { name: "SHAPE", fill: null, stroke: "red", strokeWidth: 1.5 });
+  this._temporaryShape = go.GraphObject.make(go.Shape, { name: "SHAPE", fill: null, stroke: "yellow", strokeWidth: 3 });
   // the Shape has to be inside a temporary Part that is used during the drawing operation
   go.GraphObject.make(go.Part, { layerName: "Tool" }, this._temporaryShape);
 }
